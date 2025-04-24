@@ -1042,7 +1042,6 @@ dev tun
 resolv-retry infinite
 nobind
 persist-key
-plugin /usr/lib/openvpn/openvpn-plugin-auth-pam.so  "openvpn login USERNAME password PASSWORD pin OTP"
 reneg-sec 0
 persist-tun
 remote-cert-tls server
@@ -1054,7 +1053,6 @@ tls-client
 tls-version-min 1.2
 tls-cipher $CC_CIPHER
 ignore-unknown-option block-outside-dns
-setenv opt block-outside-dns # Prevent Windows 10 DNS leak
 verb 3" >>/etc/openvpn/client-template.txt
 
 	if [[ $COMPRESSION_ENABLED == "y" ]]; then
