@@ -2,6 +2,9 @@
 
 This repository contains scripts and a template file to set up and manage **OpenVPN** with **two-factor authentication (2FA)** using **Google Authenticator**. The project includes various shell scripts to install OpenVPN, manage users, and create ZIP files with necessary credentials.
 
+##TODO
+- give option either Windows or Nix, append the line if windows chosen.
+
 ## Table of Contents
 
 - [Scripts](#scripts)
