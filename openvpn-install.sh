@@ -863,8 +863,8 @@ ifconfig-pool-persist ipp.txt" >>/etc/openvpn/server.conf
 		fi
 		;;
 	esac
-	echo 'push "redirect-gateway def1 bypass-dhcp"' >>/etc/openvpn/server.conf
-
+	echo '#push "redirect-gateway def1 bypass-dhcp"' >>/etc/openvpn/server.conf
+	# commenting about disables all network in client going through VPN, only selected network with 'push route' goes with VPN
 	# IPv6 network settings if needed
 	if [[ $IPV6_SUPPORT == 'y' ]]; then
 		echo 'server-ipv6 fd42:42:42:42::/112
